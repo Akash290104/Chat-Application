@@ -2,7 +2,7 @@ import express from "express"
 import protect from "../middleware/authMiddleware.js"
 import { accessChats, fetchChats, createGroupChat, renameGroup, addToGroup, removeFromGroup } from "../controllers/chatControllers.js"
 
-const router  = express.Router()
+const router  = express.Router();
 
 router.route("/").post(protect, accessChats)
 router.route("/").get(protect, fetchChats)
