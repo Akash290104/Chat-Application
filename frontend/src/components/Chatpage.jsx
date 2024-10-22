@@ -23,6 +23,7 @@ const Chatpage = () => {
         secure: true,
         rejectUnauthorized: false,
         reconnection: true,
+        withCredentials: true
       });
 
       socket.on("connect", () => {
