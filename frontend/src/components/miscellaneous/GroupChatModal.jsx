@@ -14,7 +14,7 @@ const GroupChatModal = ({ children, hideGroupChatModal, socket }) => {
   const [loading, setLoading] = useState(false);
   const [noUsers, setNoUsers] = useState(false);
 
-  const { user, chats, setChats } = ChatState();
+  const { user } = ChatState();
 
   const handleFunction = (user) => {
     // console.log(user);
