@@ -1,4 +1,4 @@
-import express from 'express'
+import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./db/connect.js";
@@ -12,7 +12,10 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://chat-application-b9lo.vercel.app"],
+  origin: [
+    "http://localhost:3000",
+    "https://chat-application-xj9i-hj3d8ipwf-akashs-projects-6f1d4f45.vercel.app",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
