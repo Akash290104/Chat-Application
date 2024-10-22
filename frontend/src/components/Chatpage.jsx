@@ -6,7 +6,7 @@ import ChatBox from "./ChatBox.jsx";
 import io from "socket.io-client";
 import { useContext } from "react";
 
-const ENDPOINT = "https://chat-application-phi-three.vercel.app"; // Ensure this is HTTPS
+const ENDPOINT = "https://chat-application-eight-theta.vercel.app"; // Ensure this is HTTPS
 let socket;
 
 const Chatpage = () => {

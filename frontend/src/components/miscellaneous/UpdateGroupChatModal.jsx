@@ -57,7 +57,7 @@ const UpdateGroupChatModal = ({
         },
       };
       const response = await axios.get(
-        `https://chat-application-phi-three.vercel.app/api/user?search=${searchTerm}`,
+        `https://chat-application-eight-theta.vercel.app/api/user?search=${searchTerm}`,
         config
       );
       setLoading(false);
@@ -89,7 +89,7 @@ const UpdateGroupChatModal = ({
         },
       };
       const response = await axios.put(
-        "https://chat-application-phi-three.vercel.app/api/chat/addtogroup",
+        "https://chat-application-eight-theta.vercel.app/api/chat/addtogroup",
         { chatId: selectedChat._id, userId: selectedUser?._id },
         config
       );
@@ -126,7 +126,7 @@ const UpdateGroupChatModal = ({
         },
       };
       const response = await axios.put(
-        "https://chat-application-phi-three.vercel.app/api/chat/removefromgroup",
+        "https://chat-application-eight-theta.vercel.app/api/chat/removefromgroup",
         { chatId: selectedChat._id, userId: selectedUser?._id },
         config
       );
@@ -169,7 +169,7 @@ const UpdateGroupChatModal = ({
       };
 
       const response = await axios.put(
-        "https://chat-application-phi-three.vercel.app/api/chat/rename",
+        "https://chat-application-eight-theta.vercel.app/api/chat/rename",
         { id: selectedChat._id, name: groupchatName },
         config
       );

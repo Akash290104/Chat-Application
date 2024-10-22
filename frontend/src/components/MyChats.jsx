@@ -21,7 +21,7 @@ const MyChats = ({ fetchAgain, socket }) => {
         },
       };
       const response = await axios.get(
-        "https://chat-application-phi-three.vercel.app/api/chat",
+        "https://chat-application-eight-theta.vercel.app/api/chat",
         config
       );
 
