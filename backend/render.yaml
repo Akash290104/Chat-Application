@@ -4,16 +4,9 @@ services:
     env: node
     plan: free
     region: oregon
-    # Specify the Node.js version if needed (adjust the version as required)
     envVars:
       - key: NODE_VERSION
-        value: 18.17.1  # Replace with the desired Node.js version
-    buildCommand: npm install
-
-    startCommand: npm start
-    healthCheckPath: /
-    autoDeploy: true
-    envVars:
+        value: 18.17.1
       - key: URL
         value: "mongodb+srv://mishraak801:github1234z@cluster0.yg2ui.mongodb.net/"
       - key: PORT
@@ -26,4 +19,7 @@ services:
         value: "754397578599833"
       - key: CLOUDINARY_API_SECRET
         value: "6avTxgOiyL_pPjKcRc5S78fr_PI"
-      # Add any other environment variables here
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
