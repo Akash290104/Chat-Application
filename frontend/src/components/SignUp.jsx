@@ -83,7 +83,7 @@ const SignUp = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/register",
+        "https://chat-application-phi-three.vercel.app/api/user/register",
         formData,
         {
           headers: {

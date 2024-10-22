@@ -63,7 +63,7 @@ const SearchBar = ({ isVisible, setIsVisible }) => {
       };
 
       const response = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `https://chat-application-phi-three.vercel.app/api/user?search=${search}`,
         config
       );
 
@@ -85,7 +85,7 @@ const SearchBar = ({ isVisible, setIsVisible }) => {
         },
       };
       const response = await axios.get(
-        "http://localhost:5000/api/chat",
+        "https://chat-application-phi-three.vercel.app/api/chat",
         config
       );
 
@@ -110,7 +110,7 @@ const SearchBar = ({ isVisible, setIsVisible }) => {
       };
 
       const response = await axios.post(
-        `http://localhost:5000/api/chat`,
+        `https://chat-application-phi-three.vercel.app/api/chat`,
         { userId },
         config
       );

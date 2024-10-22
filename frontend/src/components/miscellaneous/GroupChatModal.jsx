@@ -44,7 +44,7 @@ const GroupChatModal = ({ children, hideGroupChatModal, socket }) => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/user?search=${query}`,
+        `https://chat-application-phi-three.vercel.app/api/user?search=${query}`,
         config
       );
       setLoading(false);
@@ -89,7 +89,7 @@ const GroupChatModal = ({ children, hideGroupChatModal, socket }) => {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/api/chat/group",
+        "https://chat-application-phi-three.vercel.app/api/chat/group",
         {
           name: groupChatName,
           users: selectedUsers.map((u) => u._id),

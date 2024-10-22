@@ -13,7 +13,7 @@ import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 import GetSender from "../config/GetSender";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chat-application-phi-three.vercel.app";
 
 const SingleChat = ({ fetchAgain, setFetchAgain, socket, socketConnected }) => {
   const { user, selectedChat, setSelectedChat } = ChatState();

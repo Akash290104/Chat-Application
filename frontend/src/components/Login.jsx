@@ -23,7 +23,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/login",
+        "https://chat-application-phi-three.vercel.app/api/user/login",
         { email, password }
       );
 
