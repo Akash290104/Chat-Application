@@ -1,5 +1,5 @@
 
-import express, { Router } from "express"
+import express from "express"
 import {registerUser, login, allUsers} from '../controllers/userController.js'
 import multer from "multer"
 import {cloudinary, storage} from "../utility/cloudinary.js"
