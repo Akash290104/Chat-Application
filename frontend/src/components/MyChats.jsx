@@ -81,7 +81,7 @@ const MyChats = ({ fetchAgain, socket }) => {
   useEffect(() => {
     setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
     fetchChats();
-  }, [fetchAgain]);
+  }, [fetchAgain, fetchChats]);
   const [groupChatModal, setGroupChatModal] = useState(false);
 
   const showGroupChatModal = () => {
