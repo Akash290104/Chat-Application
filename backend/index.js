@@ -12,10 +12,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: [
-    "http://localhost:3000",
-    "https://chat-application-xj9i-hj3d8ipwf-akashs-projects-6f1d4f45.vercel.app",
-  ],
+  origin: ["http://localhost:3000", "https://chat-application-xj9i.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
